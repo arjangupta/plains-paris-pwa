@@ -14,6 +14,9 @@ function MobileView() {
       <div className='Mobile-header-right-bottom'>
         2850 NE Kendallwood Pkwy, Gladstone, MO 64119
       </div>
+      <div className='body-section'>
+        <hr className='solid'></hr>
+      </div>
     </div>
   );
 }
