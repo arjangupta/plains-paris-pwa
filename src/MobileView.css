@@ -1,3 +1,5 @@
+@import "App.css";
+
 .Mobile-header-left {
     height: 35vh;
     width: 40%;
@@ -29,4 +31,8 @@
     width: 50%;
     height: 7vh;
     margin-left: 45%;
+    font-family: 'Plains-Paris-Peignot';
+    font-weight: bold;
+    font-size: 16px;
+    color: #0054a4;
 }

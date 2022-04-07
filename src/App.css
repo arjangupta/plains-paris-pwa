@@ -16,3 +16,8 @@
 .App-link {
   color: #61dafb;
 }
+
+@font-face {
+  font-family: 'Plains-Paris-Peignot';
+  src: url('./fonts/Peignot.ttf') format('truetype');
+}
