@@ -8,8 +8,11 @@ function MobileView() {
       <div className="Mobile-header-left">
         <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
       </div>
-      <div className='Mobile-header-right'>
+      <div className='Mobile-header-right-top'>
         <img src={TopRightPic} className="Top-right-pic" alt="Plain's Paris Logo"/>
+      </div>
+      <div className='Mobile-header-right-bottom'>
+        2850 NE Kendallwood Pkwy, Gladstone, MO 64119
       </div>
     </div>
   );

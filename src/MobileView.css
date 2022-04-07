@@ -13,8 +13,8 @@
     border-radius: 25px;
 }
 
-.Mobile-header-right {
-    height: 25vh;
+.Mobile-header-right-top {
+    height: 23.5vh;
     width: 57%;
     margin-left: 42%;
 }
@@ -23,4 +23,10 @@
     width: 100%;
     height: 100%;
     object-fit: scale-down;
+}
+
+.Mobile-header-right-bottom {
+    width: 50%;
+    height: 7vh;
+    margin-left: 45%;
 }
