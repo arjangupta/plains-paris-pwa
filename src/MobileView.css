@@ -1,0 +1,26 @@
+.Mobile-header-left {
+    height: 35vh;
+    width: 40%;
+    float: left;
+    padding-top: 2.5%;
+    padding-left: 2%;
+}
+
+.Top-left-pic {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.Mobile-header-right {
+    height: 25vh;
+    width: 57%;
+    margin-left: 42%;
+}
+
+.Top-right-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}

@@ -1,12 +1,17 @@
-import './App.css'
+import './MobileView.css'
+import TopLeftPic from './images/justin_and_tara.png'
+import TopRightPic from './images/plainsparis-balloon-logo-cropped.png'
 
 function MobileView() {
   return (
-    <header className="App-header">
-      <p>
-        Plain's Paris Mobile App
-      </p>
-    </header>
+    <div>
+      <div className="Mobile-header-left">
+        <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
+      </div>
+      <div className='Mobile-header-right'>
+        <img src={TopRightPic} className="Top-right-pic" alt="Plain's Paris Logo"/>
+      </div>
+    </div>
   );
 }
 
