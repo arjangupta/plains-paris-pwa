@@ -20,6 +20,12 @@ function MobileView() {
           <button>
             Refer Us
           </button>
+          <button>
+            Contact Us
+          </button>
+          <button>
+            About Us
+          </button>
         </div>
       </div>
     </div>
