@@ -44,7 +44,7 @@
 hr.solid {
     border-top: 1px solid #bbb;
     clear: both;
-    margin: 10px;
+    margin: 4%;
 }
 
 .body-section {
@@ -54,7 +54,7 @@ hr.solid {
 }
 
 .button-section {
-    padding-top: 4%;
+    padding-top: 3%;
     padding-bottom: 1%;
 }
 
@@ -72,8 +72,8 @@ button {
     font-weight: 600;
     line-height: normal;
     margin: 0 auto;
-    margin-bottom: 13px;
-    min-height: 3.75em;
+    margin-bottom: 3%;
+    min-height: 2.75em;
     min-width: 45%;
     width: 55%;
     outline: none;
