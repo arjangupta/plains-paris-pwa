@@ -27,6 +27,7 @@ function MobileView() {
             About Us
           </button>
         </div>
+        <hr className='solid'></hr>
       </div>
     </div>
   );

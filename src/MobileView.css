@@ -50,12 +50,12 @@ hr.solid {
 .body-section {
     height: 60vh;
     width: 100%;
-    padding-top: 2.5%;
     align-items: center;
 }
 
 .button-section {
-    padding-top: 2%;
+    padding-top: 4%;
+    padding-bottom: 1%;
 }
 
 button {
@@ -71,7 +71,8 @@ button {
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
-    margin: 10px;
+    margin: 0 auto;
+    margin-bottom: 13px;
     min-height: 3.75em;
     min-width: 45%;
     width: 55%;
