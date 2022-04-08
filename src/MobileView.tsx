@@ -4,7 +4,7 @@ import TopRightPic from './images/plainsparis-balloon-logo-cropped.png'
 
 function MobileView() {
   return (
-    <div>
+    <div className='Mobile-view'>
       <div className="Mobile-header-left">
         <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
       </div>
@@ -16,6 +16,11 @@ function MobileView() {
       </div>
       <div className='body-section'>
         <hr className='solid'></hr>
+        <div className='button-section'>
+          <button>
+            Refer Us
+          </button>
+        </div>
       </div>
     </div>
   );
