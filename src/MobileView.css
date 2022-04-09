@@ -102,3 +102,31 @@ button:active {
     box-shadow: none;
     transform: translateY(0);
 }
+
+.bottom-icon-div-fb {
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.bottom-icon-div-insta {
+    padding-top: 5%;
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.bottom-icon-div-website {
+    padding-top: 5%;
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.bottom-icon {
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+}

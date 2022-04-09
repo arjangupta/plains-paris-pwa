@@ -1,6 +1,9 @@
 import './MobileView.css'
 import TopLeftPic from './images/justin_and_tara.png'
 import TopRightPic from './images/plainsparis-balloon-logo-cropped.png'
+import FacebookIcon from './icons/icons8-facebook-100.png'
+import InstagramIcon from './icons/icons8-instagram-100.png'
+import WebsiteIcon from './icons/icons8-website-100.png'
 
 function MobileView() {
   return (
@@ -28,6 +31,15 @@ function MobileView() {
           </button>
         </div>
         <hr className='solid'></hr>
+        <div className='bottom-icon-div-fb'>
+          <img src={FacebookIcon} className='bottom-icon' alt='Facebook Icon'/>
+        </div>
+        <div className='bottom-icon-div-insta'>
+          <img src={InstagramIcon} className='bottom-icon' alt='Instagram Icon'/>
+        </div>
+        <div className='bottom-icon-div-website'>
+          <img src={WebsiteIcon} className='bottom-icon' alt='Website Icon'/>
+        </div>
       </div>
     </div>
   );
