@@ -1,0 +1,132 @@
+@import "App.css";
+
+.Mobile-view {
+    background-color: #fff;
+}
+
+.Mobile-header-left {
+    height: 32vh;
+    width: 40%;
+    float: left;
+    padding-top: 2.5%;
+    padding-left: 2%;
+}
+
+.Top-left-pic {
+    width: 100%;
+    height: 92%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.Mobile-header-right-top {
+    height: 23.5vh;
+    width: 57%;
+    margin-left: 42%;
+}
+
+.Top-right-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.Mobile-header-right-bottom {
+    width: 50%;
+    height: 7vh;
+    margin-left: 45%;
+    font-family: 'Plains-Paris-Peignot', 'Peignot';
+    font-weight: bold;
+    font-size: 16px;
+    color: #0054a4;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+    clear: both;
+    margin: 4%;
+}
+
+.body-section {
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+}
+
+.button-section {
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #0054a4;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #0054a4;
+    cursor: pointer;
+    display: block;
+    font-family: 'Plains-Paris-Peignot', 'Peignot';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    min-height: 2.75em;
+    min-width: 45%;
+    width: 55%;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #0054a4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.bottom-icon-div-fb {
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.bottom-icon-div-insta {
+    padding-top: 5%;
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.bottom-icon-div-website {
+    padding-top: 5%;
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.bottom-icon {
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+}
