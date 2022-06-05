@@ -4,15 +4,41 @@ import TopRightPic from './images/plainsparis-balloon-logo-cropped.png'
 import FacebookIcon from './icons/icons8-facebook-100.png'
 import InstagramIcon from './icons/icons8-instagram-100.png'
 import WebsiteIcon from './icons/icons8-website-100.png'
-import { Component } from 'react'
+import React from 'react'
 
-class MobileView extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     showReferU
-  //   }
-  // }
+class MobileView extends React.Component {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      showReferUs: false,
+      showContactUs: false,
+      showAboutUs: false
+    }
+  }
+
+  showReferUsModal = () => {
+    this.setState({ showReferUs: true });
+  }
+
+  hideReferUsModal = () => {
+    this.setState({ showReferUs: false });
+  }
+
+  showContactUsModal = () => {
+    this.setState({ showContactUs: true });
+  }
+
+  hideContactUsModal = () => {
+    this.setState({ showContactUs: false });
+  }
+
+  showAboutUsModal = () => {
+    this.setState({ showAboutUs: true });
+  }
+
+  hideAboutUsModal = () => {
+    this.setState({ showAboutUs: false });
+  }
 
   render() {
     return (
