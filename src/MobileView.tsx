@@ -14,10 +14,13 @@ class MobileView extends React.Component {
       showContactUs: false,
       showAboutUs: false
     }
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
+    // this.showReferUsModal = this.showReferUsModal.bind(this);
   }
 
   showReferUsModal = () => {
     this.setState({ showReferUs: true });
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideReferUsModal = () => {
@@ -55,7 +58,7 @@ class MobileView extends React.Component {
         <div className='body-section'>
           <hr className='solid'></hr>
           <div className='button-section'>
-            <button>
+            <button type="button" onClick={this.showReferUsModal}>
               Refer Us
             </button>
             <button>
