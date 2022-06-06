@@ -25,22 +25,27 @@ class MobileView extends React.Component {
 
   hideReferUsModal = () => {
     this.setState({ showReferUs: false });
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   showContactUsModal = () => {
     this.setState({ showContactUs: true });
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideContactUsModal = () => {
     this.setState({ showContactUs: false });
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   showAboutUsModal = () => {
     this.setState({ showAboutUs: true });
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideAboutUsModal = () => {
     this.setState({ showAboutUs: false });
+    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   render() {
@@ -61,10 +66,10 @@ class MobileView extends React.Component {
             <button type="button" onClick={this.showReferUsModal}>
               Refer Us
             </button>
-            <button>
+            <button type="button" onClick={this.showContactUsModal}>
               Contact Us
             </button>
-            <button>
+            <button type="button" onClick={this.showAboutUsModal}>
               About Us
             </button>
           </div>
