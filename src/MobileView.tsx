@@ -12,7 +12,8 @@ type MobileViewPropsType = {}
 type MobileViewStateType = {
   showReferUs: boolean,
   showContactUs: boolean,
-  showAboutUs: boolean
+  showAboutUs: boolean,
+  mainUiButtonDisabled: boolean
 }
 
 class MobileView extends React.Component<MobileViewPropsType, MobileViewStateType> {
@@ -21,39 +22,40 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
     this.state = {
       showReferUs: false,
       showContactUs: false,
-      showAboutUs: false
+      showAboutUs: false,
+      mainUiButtonDisabled: false
     }
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
     // this.showReferUsModal = this.showReferUsModal.bind(this);
   }
 
   showReferUsModal = () => {
-    this.setState({ showReferUs: true });
+    this.setState({ showReferUs: true, mainUiButtonDisabled: true });
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideReferUsModal = () => {
-    this.setState({ showReferUs: false });
+    this.setState({ showReferUs: false, mainUiButtonDisabled: false });
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   showContactUsModal = () => {
-    this.setState({ showContactUs: true });
+    this.setState({ showContactUs: true, mainUiButtonDisabled: true });
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideContactUsModal = () => {
-    this.setState({ showContactUs: false });
+    this.setState({ showContactUs: false, mainUiButtonDisabled: false });
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   showAboutUsModal = () => {
-    this.setState({ showAboutUs: true });
+    this.setState({ showAboutUs: true, mainUiButtonDisabled: true });
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideAboutUsModal = () => {
-    this.setState({ showAboutUs: false });
+    this.setState({ showAboutUs: false, mainUiButtonDisabled: false });
     console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
@@ -89,15 +91,15 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
           <hr className='solid'></hr>
           <div className='button-section'>
             <Modal {...referUsModalParams}></Modal>
-            <button type="button" onClick={this.showReferUsModal}>
+            <button type="button" onClick={this.showReferUsModal} disabled={this.state.mainUiButtonDisabled}>
               Refer Us
             </button>
             <Modal {...contactUsModalParams}></Modal>
-            <button type="button" onClick={this.showContactUsModal}>
+            <button type="button" onClick={this.showContactUsModal} disabled={this.state.mainUiButtonDisabled}>
               Contact Us
             </button>
             <Modal {...aboutUsModalParams}></Modal>
-            <button type="button" onClick={this.showAboutUsModal}>
+            <button type="button" onClick={this.showAboutUsModal} disabled={this.state.mainUiButtonDisabled}>
               About Us
             </button>
           </div>
