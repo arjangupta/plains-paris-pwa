@@ -77,6 +77,10 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
     }
     // Return the rendering
     return (
+      <div>
+        <Modal {...referUsModalParams}></Modal>
+        <Modal {...contactUsModalParams}></Modal>
+        <Modal {...aboutUsModalParams}></Modal>
       <div className='Mobile-view'>
         <div className="Mobile-header-left">
           <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
@@ -90,15 +94,12 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
         <div className='body-section'>
           <hr className='solid'></hr>
           <div className='button-section'>
-            <Modal {...referUsModalParams}></Modal>
             <button type="button" onClick={this.showReferUsModal} disabled={this.state.mainUiButtonDisabled}>
               Refer Us
             </button>
-            <Modal {...contactUsModalParams}></Modal>
             <button type="button" onClick={this.showContactUsModal} disabled={this.state.mainUiButtonDisabled}>
               Contact Us
             </button>
-            <Modal {...aboutUsModalParams}></Modal>
             <button type="button" onClick={this.showAboutUsModal} disabled={this.state.mainUiButtonDisabled}>
               About Us
             </button>
@@ -114,6 +115,7 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
             <img src={WebsiteIcon} className='bottom-icon' alt='Website Icon'/>
           </div>
         </div>
+      </div>
       </div>
     );
   }
