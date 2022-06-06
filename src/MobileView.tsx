@@ -58,6 +58,7 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
   }
 
   render() {
+    // Declare the parameters for the Refer Us modal
     let referUsModalParams: ModalParams = {
       handleClose: this.hideReferUsModal,
       show: this.state.showReferUs
@@ -76,6 +77,7 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
         <div className='body-section'>
           <hr className='solid'></hr>
           <div className='button-section'>
+            <Modal {...referUsModalParams}></Modal>
             <button type="button" onClick={this.showReferUsModal}>
               Refer Us
             </button>
