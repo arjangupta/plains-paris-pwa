@@ -5,6 +5,7 @@ import FacebookIcon from './icons/icons8-facebook-100.png'
 import InstagramIcon from './icons/icons8-instagram-100.png'
 import WebsiteIcon from './icons/icons8-website-100.png'
 import React from 'react'
+import './Modal'
 
 class MobileView extends React.Component {
   constructor(props: {}) {
