@@ -6,9 +6,17 @@ import InstagramIcon from './icons/icons8-instagram-100.png'
 import WebsiteIcon from './icons/icons8-website-100.png'
 import React from 'react'
 import './Modal'
+import { Modal, ModalParams } from './Modal'
 
-class MobileView extends React.Component {
-  constructor(props: {}) {
+type MobileViewPropsType = {}
+type MobileViewStateType = {
+  showReferUs: boolean,
+  showContactUs: boolean,
+  showAboutUs: boolean
+}
+
+class MobileView extends React.Component<MobileViewPropsType, MobileViewStateType> {
+  constructor(props: MobileViewPropsType) {
     super(props);
     this.state = {
       showReferUs: false,
@@ -50,6 +58,10 @@ class MobileView extends React.Component {
   }
 
   render() {
+    let referUsModalParams: ModalParams = {
+      handleClose: this.hideReferUsModal,
+      show: this.state.showReferUs
+    }
     return (
       <div className='Mobile-view'>
         <div className="Mobile-header-left">

@@ -1,7 +1,7 @@
 import './modal.css';
 
 export type ModalParams = {
-  (): void,
+  handleClose: () => void,
   show: boolean
 };
 
@@ -11,7 +11,7 @@ export const Modal = (params: ModalParams) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
-        <button type="button" onClick={params}>
+        <button type="button" onClick={params.handleClose}>
           Close
         </button>
       </section>
