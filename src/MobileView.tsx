@@ -59,10 +59,21 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
 
   render() {
     // Declare the parameters for the Refer Us modal
-    let referUsModalParams: ModalParams = {
+    const referUsModalParams: ModalParams = {
       handleClose: this.hideReferUsModal,
       show: this.state.showReferUs
     }
+    // Declare the paramaters for the Contact Us modal
+    const contactUsModalParams: ModalParams = {
+      handleClose: this.hideContactUsModal,
+      show: this.state.showContactUs
+    }
+    // Declare the params for the About Us modal
+    const aboutUsModalParams: ModalParams = {
+      handleClose: this.hideAboutUsModal,
+      show: this.state.showAboutUs
+    }
+    // Return the rendering
     return (
       <div className='Mobile-view'>
         <div className="Mobile-header-left">
@@ -81,9 +92,11 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
             <button type="button" onClick={this.showReferUsModal}>
               Refer Us
             </button>
+            <Modal {...contactUsModalParams}></Modal>
             <button type="button" onClick={this.showContactUsModal}>
               Contact Us
             </button>
+            <Modal {...aboutUsModalParams}></Modal>
             <button type="button" onClick={this.showAboutUsModal}>
               About Us
             </button>
