@@ -24,38 +24,30 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
       showAboutUs: false,
       mainUiButtonDisabled: false
     }
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-    // this.showReferUsModal = this.showReferUsModal.bind(this);
   }
 
   showReferUsModal = () => {
     this.setState({ showReferUs: true, mainUiButtonDisabled: true });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideReferUsModal = () => {
     this.setState({ showReferUs: false, mainUiButtonDisabled: false });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   showContactUsModal = () => {
     this.setState({ showContactUs: true, mainUiButtonDisabled: true });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideContactUsModal = () => {
     this.setState({ showContactUs: false, mainUiButtonDisabled: false });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   showAboutUsModal = () => {
     this.setState({ showAboutUs: true, mainUiButtonDisabled: true });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   hideAboutUsModal = () => {
     this.setState({ showAboutUs: false, mainUiButtonDisabled: false });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
   }
 
   render() {
