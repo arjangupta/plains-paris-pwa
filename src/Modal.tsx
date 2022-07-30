@@ -11,9 +11,7 @@ export const Modal = (params: ModalParams) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
-        <button type="button" onClick={params.handleClose}>
-          Close
-        </button>
+        <a href="#" className="close" onClick={params.handleClose}></a>
       </section>
     </div>
   );
