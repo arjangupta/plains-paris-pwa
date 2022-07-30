@@ -1,18 +1,25 @@
 import './modal.css';
+import React from 'react';
 
-export type ModalParams = {
+export type ModalPropsType = {
   handleClose: () => void,
   show: boolean
 };
+export type ModalStateType = {};
 
-export const Modal = (params: ModalParams) => {
-  const showHideClassName = params.show ? "modal display-block" : "modal display-none";
-
-  return (
-    <div className={showHideClassName}>
-      <section className="modal-main">
-        <a href="#" className="close" onClick={params.handleClose}></a>
-      </section>
-    </div>
-  );
-};
+export class Modal extends React.Component<ModalPropsType, ModalStateType> {
+  constructor(props: ModalPropsType) {
+    super(props);
+  }
+  
+  render() {
+    const showHideClassName = this.props.show ? "modal display-block" : "modal display-none";
+    return (
+      <div className={showHideClassName}>
+        <section className="modal-main">
+          <a href="#" className="close" onClick={this.props.handleClose}></a>
+        </section>
+      </div>
+    );
+  }
+}

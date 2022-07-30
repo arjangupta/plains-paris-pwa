@@ -5,15 +5,15 @@ import FacebookIcon from './icons/icons8-facebook-100.png'
 import InstagramIcon from './icons/icons8-instagram-100.png'
 import WebsiteIcon from './icons/icons8-website-100.png'
 import React from 'react'
-import { Modal, ModalParams } from './Modal'
+import { Modal, ModalPropsType } from './Modal'
 
-type MobileViewPropsType = {}
+type MobileViewPropsType = {};
 type MobileViewStateType = {
   showReferUs: boolean,
   showContactUs: boolean,
   showAboutUs: boolean,
   mainUiButtonDisabled: boolean
-}
+};
 
 class MobileView extends React.Component<MobileViewPropsType, MobileViewStateType> {
   constructor(props: MobileViewPropsType) {
@@ -52,26 +52,26 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
 
   render() {
     // Declare the parameters for the Refer Us modal
-    const referUsModalParams: ModalParams = {
+    const referUsModalPropsType: ModalPropsType = {
       handleClose: this.hideReferUsModal,
       show: this.state.showReferUs
     }
     // Declare the paramaters for the Contact Us modal
-    const contactUsModalParams: ModalParams = {
+    const contactUsModalPropsType: ModalPropsType = {
       handleClose: this.hideContactUsModal,
       show: this.state.showContactUs
     }
     // Declare the params for the About Us modal
-    const aboutUsModalParams: ModalParams = {
+    const aboutUsModalPropsType: ModalPropsType = {
       handleClose: this.hideAboutUsModal,
       show: this.state.showAboutUs
     }
     // Return the rendering
     return (
       <div>
-        <Modal {...referUsModalParams}></Modal>
-        <Modal {...contactUsModalParams}></Modal>
-        <Modal {...aboutUsModalParams}></Modal>
+        <Modal {...referUsModalPropsType}></Modal>
+        <Modal {...contactUsModalPropsType}></Modal>
+        <Modal {...aboutUsModalPropsType}></Modal>
       <div className='Mobile-view'>
         <div className="Mobile-header-left">
           <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
