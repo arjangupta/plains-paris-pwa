@@ -52,26 +52,26 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
 
   render() {
     // Declare the parameters for the Refer Us modal
-    const referUsModalPropsType: ModalPropsType = {
+    const referUsModalProps: ModalPropsType = {
       handleClose: this.hideReferUsModal,
       show: this.state.showReferUs
     }
     // Declare the paramaters for the Contact Us modal
-    const contactUsModalPropsType: ModalPropsType = {
+    const contactUsModalProps: ModalPropsType = {
       handleClose: this.hideContactUsModal,
       show: this.state.showContactUs
     }
     // Declare the params for the About Us modal
-    const aboutUsModalPropsType: ModalPropsType = {
+    const aboutUsModalProps: ModalPropsType = {
       handleClose: this.hideAboutUsModal,
       show: this.state.showAboutUs
     }
     // Return the rendering
     return (
       <div>
-        <Modal {...referUsModalPropsType}></Modal>
-        <Modal {...contactUsModalPropsType}></Modal>
-        <Modal {...aboutUsModalPropsType}></Modal>
+        <Modal {...referUsModalProps}></Modal>
+        <Modal {...contactUsModalProps}></Modal>
+        <Modal {...aboutUsModalProps}></Modal>
       <div className='Mobile-view'>
         <div className="Mobile-header-left">
           <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
