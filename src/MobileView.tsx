@@ -42,17 +42,20 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
     // Declare the parameters for the Refer Us modal
     const referUsModalProps: ModalPropsType = {
       handleClose: this.hideReferUsModal,
-      show: this.state.showReferUs
+      show: this.state.showReferUs,
+      modalContents: <div>Refer Us</div>
     }
     // Declare the paramaters for the Contact Us modal
     const contactUsModalProps: ModalPropsType = {
       handleClose: this.hideContactUsModal,
-      show: this.state.showContactUs
+      show: this.state.showContactUs,
+      modalContents: <div>Contact Us</div>
     }
     // Declare the params for the About Us modal
     const aboutUsModalProps: ModalPropsType = {
       handleClose: this.hideAboutUsModal,
-      show: this.state.showAboutUs
+      show: this.state.showAboutUs,
+      modalContents: <div>About Us</div>
     }
     // Return the rendering
     return (
