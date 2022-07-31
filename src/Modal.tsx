@@ -31,15 +31,23 @@ export const referUsElement   : JSX.Element =
     <div className='modal-title'>
       Refer Us
     </div>
-    <div>
-      What's the name of the person receving this app?
-    </div>
-    <div>
-      What's their phone number?
-    </div>
-    <button>
-      Share App
-    </button>
+    <form>
+      <div>
+        <label htmlFor='fullname' className='modal-contents'>
+          What's the name of the person receving this app?
+        </label>
+        <input type='text' name='Full Name' id='fullname'/>
+      </div>
+      <div>
+        <label htmlFor='phone' className='modal-contents'>
+          What's their phone number?
+        </label>
+        <input type='tel' name='Phone' id='phone'/>
+      </div>
+      <button>
+        Share App
+      </button>
+    </form>
   </div>
 
 export const contactUsElement : JSX.Element = 

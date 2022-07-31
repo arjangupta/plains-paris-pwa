@@ -1,3 +1,5 @@
+
+
 .modal {
   position: fixed;
   top: 0;
@@ -54,7 +56,26 @@
 
 .modal-title {
   margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 32px;
   font-family: 'Plains-Paris-Peignot', 'Peignot';
   color: #0054a4;
+}
+
+.modal-contents {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Georgia';
+  color: #0054a4;
+  margin-bottom: 30px;
+}
+
+input, select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
