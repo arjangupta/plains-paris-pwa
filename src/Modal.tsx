@@ -27,16 +27,27 @@ export class Modal extends React.Component<ModalPropsType, ModalStateType> {
 }
 
 export const referUsElement   : JSX.Element = 
-  <div className='modal-content'>
-    Refer Us
-  </div>;
+  <div>
+    <div className='modal-title'>
+      Refer Us
+    </div>
+    <div>
+      What's the name of the person receving this app?
+    </div>
+    <div>
+      What's their phone number?
+    </div>
+    <button>
+      Share App
+    </button>
+  </div>
 
 export const contactUsElement : JSX.Element = 
-  <div className='modal-content'>
+  <div className='modal-title'>
     Contact Us
   </div>;
 
 export const aboutUsElement   : JSX.Element =
-  <div className='modal-content'>
+  <div className='modal-title'>
     About Us
   </div>;

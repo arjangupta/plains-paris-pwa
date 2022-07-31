@@ -52,8 +52,9 @@
   transform: rotate(-45deg);
 }
 
-.modal-content {
+.modal-title {
   margin-top: 40px;
   font-size: 32px;
   font-family: 'Plains-Paris-Peignot', 'Peignot';
+  color: #0054a4;
 }
