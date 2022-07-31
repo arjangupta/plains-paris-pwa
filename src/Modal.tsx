@@ -9,16 +9,12 @@ export type ModalPropsType = {
 export type ModalStateType = {};
 
 export class Modal extends React.Component<ModalPropsType, ModalStateType> {
-  constructor(props: ModalPropsType) {
-    super(props);
-  }
-  
   render() {
     const showHideClassName = this.props.show ? "modal display-block" : "modal display-none";
     return (
       <div className={showHideClassName}>
         <section className="modal-main">
-          <a href="#" className="close" onClick={this.props.handleClose}></a>
+          <div className="close" onClick={this.props.handleClose}></div>
           {this.props.modalContents}
         </section>
       </div>
