@@ -44,7 +44,7 @@ export const referUsElement   : JSX.Element =
         </label>
         <input type='tel' name='Phone' id='phone'/>
       </div>
-      <button>
+      <button className='blue-button'>
         Share App
       </button>
     </form>
