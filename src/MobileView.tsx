@@ -27,29 +27,17 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
     }
   }
 
-  showReferUsModal = () => {
-    this.setState({ showReferUs: true, mainUiButtonDisabled: true });
-  }
+  showReferUsModal = () => this.setState({ showReferUs: true, mainUiButtonDisabled: true });
 
-  hideReferUsModal = () => {
-    this.setState({ showReferUs: false, mainUiButtonDisabled: false });
-  }
+  hideReferUsModal = () => this.setState({ showReferUs: false, mainUiButtonDisabled: false });
 
-  showContactUsModal = () => {
-    this.setState({ showContactUs: true, mainUiButtonDisabled: true });
-  }
+  showContactUsModal = () => this.setState({ showContactUs: true, mainUiButtonDisabled: true });
 
-  hideContactUsModal = () => {
-    this.setState({ showContactUs: false, mainUiButtonDisabled: false });
-  }
+  hideContactUsModal = () => this.setState({ showContactUs: false, mainUiButtonDisabled: false });
 
-  showAboutUsModal = () => {
-    this.setState({ showAboutUs: true, mainUiButtonDisabled: true });
-  }
+  showAboutUsModal = () => this.setState({ showAboutUs: true, mainUiButtonDisabled: true });
 
-  hideAboutUsModal = () => {
-    this.setState({ showAboutUs: false, mainUiButtonDisabled: false });
-  }
+  hideAboutUsModal = () => this.setState({ showAboutUs: false, mainUiButtonDisabled: false });
 
   render() {
     // Declare the parameters for the Refer Us modal
