@@ -1,13 +1,13 @@
 import './modal.css';
 import React from 'react';
 
-type ModalPropsType = {
+export type ModalPropsType = {
   handleClose: () => void,
   show: boolean
 };
-type ModalStateType = {};
+export type ModalStateType = {};
 
-class Modal extends React.Component<ModalPropsType, ModalStateType> {
+export class Modal extends React.Component<ModalPropsType, ModalStateType> {
   constructor(props: ModalPropsType) {
     super(props);
   }
@@ -28,22 +28,6 @@ export interface ReferUsModalPropsType extends ModalPropsType {};
 
 export class ReferUsModal extends Modal {
   constructor(props: ReferUsModalPropsType) {
-    super(props)
-  }
-}
-
-export interface ContactUsModalPropsType extends ModalPropsType {};
-
-export class ContactUsModal extends Modal {
-  constructor(props: ContactUsModalPropsType) {
-    super(props)
-  }
-}
-
-export interface AboutUsModalPropsType extends ModalPropsType {};
-
-export class AboutUsModal extends Modal {
-  constructor(props: AboutUsModalPropsType) {
     super(props)
   }
 }
