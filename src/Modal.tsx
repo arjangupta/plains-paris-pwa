@@ -25,3 +25,7 @@ export class Modal extends React.Component<ModalPropsType, ModalStateType> {
     );
   }
 }
+
+export const referUsElement   : JSX.Element = <div>Refer Us</div>;
+export const contactUsElement : JSX.Element = <div>Contact Us</div>;
+export const aboutUsElement   : JSX.Element = <div>About Us</div>;

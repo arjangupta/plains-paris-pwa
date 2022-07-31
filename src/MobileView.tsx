@@ -5,7 +5,7 @@ import FacebookIcon from './icons/icons8-facebook-100.png'
 import InstagramIcon from './icons/icons8-instagram-100.png'
 import WebsiteIcon from './icons/icons8-website-100.png'
 import React from 'react'
-import { Modal, ModalPropsType } from './Modal'
+import { aboutUsElement, contactUsElement, Modal, ModalPropsType, referUsElement } from './Modal'
 
 type MobileViewPropsType = {};
 type MobileViewStateType = {
@@ -43,19 +43,19 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
     const referUsModalProps: ModalPropsType = {
       handleClose: this.hideReferUsModal,
       show: this.state.showReferUs,
-      modalContents: <div>Refer Us</div>
+      modalContents: referUsElement
     }
     // Declare the paramaters for the Contact Us modal
     const contactUsModalProps: ModalPropsType = {
       handleClose: this.hideContactUsModal,
       show: this.state.showContactUs,
-      modalContents: <div>Contact Us</div>
+      modalContents: contactUsElement
     }
     // Declare the params for the About Us modal
     const aboutUsModalProps: ModalPropsType = {
       handleClose: this.hideAboutUsModal,
       show: this.state.showAboutUs,
-      modalContents: <div>About Us</div>
+      modalContents: aboutUsElement
     }
     // Return the rendering
     return (
