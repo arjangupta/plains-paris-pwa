@@ -23,11 +23,3 @@ export class Modal extends React.Component<ModalPropsType, ModalStateType> {
     );
   }
 }
-
-export interface ReferUsModalPropsType extends ModalPropsType {};
-
-export class ReferUsModal extends Modal {
-  constructor(props: ReferUsModalPropsType) {
-    super(props)
-  }
-}
