@@ -5,16 +5,15 @@ import FacebookIcon from './icons/icons8-facebook-100.png'
 import InstagramIcon from './icons/icons8-instagram-100.png'
 import WebsiteIcon from './icons/icons8-website-100.png'
 import React from 'react'
-import './Modal'
-import { Modal, ModalParams } from './Modal'
+import { aboutUsElement, contactUsElement, Modal, ModalPropsType, referUsElement } from './Modal'
 
-type MobileViewPropsType = {}
+type MobileViewPropsType = {};
 type MobileViewStateType = {
   showReferUs: boolean,
   showContactUs: boolean,
   showAboutUs: boolean,
   mainUiButtonDisabled: boolean
-}
+};
 
 class MobileView extends React.Component<MobileViewPropsType, MobileViewStateType> {
   constructor(props: MobileViewPropsType) {
@@ -25,62 +24,45 @@ class MobileView extends React.Component<MobileViewPropsType, MobileViewStateTyp
       showAboutUs: false,
       mainUiButtonDisabled: false
     }
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-    // this.showReferUsModal = this.showReferUsModal.bind(this);
   }
 
-  showReferUsModal = () => {
-    this.setState({ showReferUs: true, mainUiButtonDisabled: true });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-  }
+  showReferUsModal = () => this.setState({ showReferUs: true, mainUiButtonDisabled: true });
 
-  hideReferUsModal = () => {
-    this.setState({ showReferUs: false, mainUiButtonDisabled: false });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-  }
+  hideReferUsModal = () => this.setState({ showReferUs: false, mainUiButtonDisabled: false });
 
-  showContactUsModal = () => {
-    this.setState({ showContactUs: true, mainUiButtonDisabled: true });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-  }
+  showContactUsModal = () => this.setState({ showContactUs: true, mainUiButtonDisabled: true });
 
-  hideContactUsModal = () => {
-    this.setState({ showContactUs: false, mainUiButtonDisabled: false });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-  }
+  hideContactUsModal = () => this.setState({ showContactUs: false, mainUiButtonDisabled: false });
 
-  showAboutUsModal = () => {
-    this.setState({ showAboutUs: true, mainUiButtonDisabled: true });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-  }
+  showAboutUsModal = () => this.setState({ showAboutUs: true, mainUiButtonDisabled: true });
 
-  hideAboutUsModal = () => {
-    this.setState({ showAboutUs: false, mainUiButtonDisabled: false });
-    console.log(`State is as follows: ${JSON.stringify(this.state)}`)
-  }
+  hideAboutUsModal = () => this.setState({ showAboutUs: false, mainUiButtonDisabled: false });
 
   render() {
     // Declare the parameters for the Refer Us modal
-    const referUsModalParams: ModalParams = {
+    const referUsModalProps: ModalPropsType = {
       handleClose: this.hideReferUsModal,
-      show: this.state.showReferUs
+      show: this.state.showReferUs,
+      modalContents: referUsElement
     }
     // Declare the paramaters for the Contact Us modal
-    const contactUsModalParams: ModalParams = {
+    const contactUsModalProps: ModalPropsType = {
       handleClose: this.hideContactUsModal,
-      show: this.state.showContactUs
+      show: this.state.showContactUs,
+      modalContents: contactUsElement
     }
     // Declare the params for the About Us modal
-    const aboutUsModalParams: ModalParams = {
+    const aboutUsModalProps: ModalPropsType = {
       handleClose: this.hideAboutUsModal,
-      show: this.state.showAboutUs
+      show: this.state.showAboutUs,
+      modalContents: aboutUsElement
     }
     // Return the rendering
     return (
       <div>
-        <Modal {...referUsModalParams}></Modal>
-        <Modal {...contactUsModalParams}></Modal>
-        <Modal {...aboutUsModalParams}></Modal>
+        <Modal {...referUsModalProps}></Modal>
+        <Modal {...contactUsModalProps}></Modal>
+        <Modal {...aboutUsModalProps}></Modal>
       <div className='Mobile-view'>
         <div className="Mobile-header-left">
           <img src={TopLeftPic} className="Top-left-pic" alt="Justin and Tara"/>
