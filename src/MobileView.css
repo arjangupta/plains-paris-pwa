@@ -68,9 +68,9 @@ button {
     cursor: pointer;
     display: block;
     font-family: 'Plains-Paris-Peignot', 'Peignot';
-    font-size: 18px;
+    font-size: 120%;
     font-weight: 600;
-    line-height: normal;
+    line-height: 150%;
     margin: 0 auto;
     margin-bottom: 3%;
     min-height: 2.75em;
