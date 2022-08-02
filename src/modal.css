@@ -61,11 +61,11 @@
 }
 
 .modal-contents {
-  margin-top: 20px;
+  margin-top: 10%;
   font-size: 20px;
   font-family: 'Georgia';
   color: #0054a4;
-  margin-bottom: 30px;
+  margin-bottom: 1%;
 }
 
 input, select {
@@ -76,6 +76,10 @@ input, select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+label {
+  display: block;
 }
 
 .blue-button {
@@ -92,7 +96,7 @@ input, select {
   font-weight: 600;
   line-height: normal;
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 10%;
   min-height: 2.75em;
   min-width: 60%;
