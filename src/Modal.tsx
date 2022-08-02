@@ -30,7 +30,7 @@ export const referUsElement : JSX.Element =
     <form>
       <div>
         <label htmlFor='fullname' className='modal-contents'>
-          What's the name of the person receving this app?
+          What's the name of the person receiving this app?
         </label>
         <input type='text' name='Full Name' id='fullname'/>
       </div>
