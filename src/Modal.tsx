@@ -46,6 +46,13 @@ export const referUsElement : JSX.Element =
     </form>
   </div>
 
+const contactUsAddress = {
+  fontSize: '105%',
+  marginBottom: '20%',
+  marginLeft: '5%',
+  marginRight: '5%'
+};
+
 export const contactUsElement : JSX.Element = 
   <div>
     <div className='modal-title'>
@@ -65,7 +72,7 @@ export const contactUsElement : JSX.Element =
         justin@plainsparis.com
       </div>
       <div style={{fontStyle: 'italic'}}>address</div>
-      <div className='contact-us' style={{fontSize: '105%', marginBottom: '20%'}}>
+      <div className='contact-us' style={contactUsAddress}>
       2850 NE Kendallwood Pkwy, Kansas City, MO 64119
       </div>
     </div>
