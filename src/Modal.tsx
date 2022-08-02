@@ -61,13 +61,22 @@ export const contactUsElement : JSX.Element =
         816.455.8600
       </div>
       <div style={{fontStyle: 'italic'}}>email</div>
-      <div className='contact-us' style={{marginBottom: '20%'}}>
+      <div className='contact-us' style={{fontSize: '110%'}}>
         justin@plainsparis.com
+      </div>
+      <div style={{fontStyle: 'italic'}}>address</div>
+      <div className='contact-us' style={{fontSize: '105%', marginBottom: '20%'}}>
+      2850 NE Kendallwood Pkwy, Kansas City, MO 64119
       </div>
     </div>
   </div>
 
 export const aboutUsElement : JSX.Element =
-  <div className='modal-title'>
-    About Us
-  </div>;
+  <div>
+    <div className='modal-title'>
+      About Us
+    </div>
+    <p className='about-us'>
+    We want you to absolutely love your new Kansas City area home. Our team is there with you like family every step of the way, making sure that your new Kansas City house feels like home. We believe so much that our agents will help find the right home for you that we will stand behind it with our “Like It or List It Guarantee” and happily give you a do-over! If you find that, in the first six months of owning your Kansas City area home, you are not 100% satisfied, we will relist it at no cost to you. 
+    </p>
+  </div>

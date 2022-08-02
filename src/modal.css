@@ -115,5 +115,17 @@ label {
 
 .contact-us {
   font-size: 24px;
+  font-weight: lighter;
   margin-bottom: 10%;
+}
+
+.about-us{
+  font-size: 105%;
+  font-family: 'Georgia';
+  color: #0054a4;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 15%;
+  text-align: justify;
+  text-justify: inter-word;
 }
