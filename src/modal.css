@@ -10,8 +10,8 @@
 .modal-main {
   position:fixed;
   background: white;
-  width: 87%;
-  height: 55vh;
+  width: 90%;
+  height: fit-content;
   top:45%;
   left:50%;
   transform: translate(-50%,-50%);
