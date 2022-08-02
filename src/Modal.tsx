@@ -22,7 +22,7 @@ export class Modal extends React.Component<ModalPropsType, ModalStateType> {
   }
 }
 
-export const referUsElement   : JSX.Element = 
+export const referUsElement : JSX.Element =
   <div>
     <div className='modal-title'>
       Refer Us
@@ -47,11 +47,27 @@ export const referUsElement   : JSX.Element =
   </div>
 
 export const contactUsElement : JSX.Element = 
-  <div className='modal-title'>
-    Contact Us
-  </div>;
+  <div>
+    <div className='modal-title'>
+      Contact Us
+    </div>
+    <div className='modal-contents'>
+      <div style={{fontStyle: 'italic'}}>call/text</div>
+      <div className='contact-us'>
+        816.797.0195
+      </div>
+      <div style={{fontStyle: 'italic'}}>office</div>
+      <div className='contact-us'>
+        816.455.8600
+      </div>
+      <div style={{fontStyle: 'italic'}}>email</div>
+      <div className='contact-us' style={{marginBottom: '20%'}}>
+        justin@plainsparis.com
+      </div>
+    </div>
+  </div>
 
-export const aboutUsElement   : JSX.Element =
+export const aboutUsElement : JSX.Element =
   <div className='modal-title'>
     About Us
   </div>;

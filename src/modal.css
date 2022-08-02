@@ -53,9 +53,10 @@
 }
 
 .modal-title {
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 20px;
-  font-size: 32px;
+  font-weight: bold;
+  font-size: 37px;
   font-family: 'Plains-Paris-Peignot', 'Peignot';
   color: #0054a4;
 }
@@ -110,4 +111,9 @@ label {
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
+}
+
+.contact-us {
+  font-size: 24px;
+  margin-bottom: 10%;
 }
