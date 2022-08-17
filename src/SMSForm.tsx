@@ -1,10 +1,11 @@
 import React from 'react';
+import './modal.css';
 
 type SMSFormPropsType = {};
 type SMSFormStateType = {
   message: {
-    to: string
-    body: string
+    fullname: string
+    phone: string
   },
   submitting: boolean,
   error: boolean
@@ -15,8 +16,8 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
     super(props);
     this.state = {
       message: {
-      to: '',
-      body: ''
+      fullname: '',
+      phone: ''
       },
       submitting: false,
       error: false
@@ -42,8 +43,8 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
         error: false,
         submitting: false,
         message: {
-          to: '',
-          body: ''
+          fullname: '',
+          phone: ''
         }
         });
       } else {
@@ -62,7 +63,6 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
     this.setState({
       message: { ...this.state.message, [name]: event.target.value }
     });
-    return event;
   }
 
   render() {
@@ -76,13 +76,13 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
             <label htmlFor='fullname' className='modal-contents'>
               What's the name of the person receiving this app?
             </label>
-            <input type='text' name='Full Name' id='fullname' value={this.state.message.to} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
+            <input type='text' name='Full Name' id='fullname' value={this.state.message.fullname} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
           </div>
           <div>
             <label htmlFor='phone' className='modal-contents'>
               What's their phone number?
             </label>
-            <input type='tel' name='Phone' id='phone' value={this.state.message.to} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
+            <input type='tel' name='Phone' id='phone' value={this.state.message.phone} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
           </div>
           <button className='blue-button' disabled={this.state.submitting}>
             Share App
