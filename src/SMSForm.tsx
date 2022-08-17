@@ -1,12 +1,14 @@
 import React from 'react';
 import './modal.css';
 
+type SMSFormMessageType = {
+  fullname: string,
+  phone: string
+}
+
 type SMSFormPropsType = {};
 type SMSFormStateType = {
-  message: {
-    fullname: string
-    phone: string
-  },
+  message: SMSFormMessageType,
   submitting: boolean,
   error: boolean
 };
@@ -27,6 +29,7 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
   }
 
   onSubmit(event: React.FormEvent<HTMLFormElement>) {
+    console.log(`Hello onSubmit, message is ${JSON.stringify(this.state.message)}`)
     event.preventDefault();
     this.setState({ submitting: true });
     fetch(`${process.env.REACT_APP_API_URL}/api/messages`, {
@@ -58,10 +61,10 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
   }
 
   onHandleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const retrieved_name: string | null = event.target.getAttribute('name');
-    const name: string = retrieved_name ? (retrieved_name) : 'null';
+    const retrieved_id: string | null = event.target.getAttribute('id');
+    const id: string = retrieved_id ? (retrieved_id) : 'null';
     this.setState({
-      message: { ...this.state.message, [name]: event.target.value }
+      message: { ...this.state.message, [id]: event.target.value }
     });
   }
 
