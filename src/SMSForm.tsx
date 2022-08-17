@@ -28,7 +28,7 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
   onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     this.setState({ submitting: true });
-    fetch('/api/messages', {
+    fetch(`${process.env.REACT_APP_API_URL}/api/messages`, {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'
@@ -47,9 +47,10 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
         }
         });
       } else {
+        console.log(`FAIL 9595`);
         this.setState({
-        error: true,
-        submitting: false
+          error: true,
+          submitting: false
         });
       }
       });
