@@ -30,7 +30,9 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
 
   onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // Don't allow more submissions while submitting
     this.setState({ submitting: true });
+    // TODO: Check if the phone number is parsed correctly
     fetch(`${process.env.REACT_APP_API_URL}/api/messages`, {
       method: 'POST',
       headers: {
