@@ -29,7 +29,6 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
   }
 
   onSubmit(event: React.FormEvent<HTMLFormElement>) {
-    console.log(`Hello onSubmit, message is ${JSON.stringify(this.state.message)}`)
     event.preventDefault();
     this.setState({ submitting: true });
     fetch(`${process.env.REACT_APP_API_URL}/api/messages`, {

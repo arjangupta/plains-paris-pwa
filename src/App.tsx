@@ -3,7 +3,6 @@ import MobileView from './MobileView';
 import { Responsive } from './Responsive';
 
 function App() {
-  console.log(`HI, test var is ${process.env.REACT_APP_TEST_VAR}`);
   return (
     <div className="App">
       <Responsive displayIn={["Laptop"]}>
