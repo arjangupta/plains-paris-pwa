@@ -71,19 +71,18 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
         <div className='modal-title'>
           Refer Us
         </div>
-        <form onSubmit={this.onSubmit}
-              className={this.state.error ? 'error sms-form' : 'sms-form'}>
+        <form onSubmit={this.onSubmit}>
           <div>
             <label htmlFor='fullname' className='modal-contents'>
               What's the name of the person receiving this app?
             </label>
-            <input type='text' name='Full Name' id='fullname' value={this.state.message.to} onChange={this.onHandleChange}/>
+            <input type='text' name='Full Name' id='fullname' value={this.state.message.to} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
           </div>
           <div>
             <label htmlFor='phone' className='modal-contents'>
               What's their phone number?
             </label>
-            <input type='tel' name='Phone' id='phone' value={this.state.message.to} onChange={this.onHandleChange}/>
+            <input type='tel' name='Phone' id='phone' value={this.state.message.to} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
           </div>
           <button className='blue-button' disabled={this.state.submitting}>
             Share App
