@@ -1,5 +1,6 @@
 import './modal.css';
 import React from 'react';
+import SMSForm from './SMSForm';
 
 export type ModalPropsType = {
   handleClose: () => void,
@@ -22,29 +23,7 @@ export class Modal extends React.Component<ModalPropsType, ModalStateType> {
   }
 }
 
-export const referUsElement : JSX.Element =
-  <div>
-    <div className='modal-title'>
-      Refer Us
-    </div>
-    <form>
-      <div>
-        <label htmlFor='fullname' className='modal-contents'>
-          What's the name of the person receiving this app?
-        </label>
-        <input type='text' name='Full Name' id='fullname'/>
-      </div>
-      <div>
-        <label htmlFor='phone' className='modal-contents'>
-          What's their phone number?
-        </label>
-        <input type='tel' name='Phone' id='phone'/>
-      </div>
-      <button className='blue-button'>
-        Share App
-      </button>
-    </form>
-  </div>
+export const referUsElement : JSX.Element = <SMSForm/>
 
 const contactUsAddress = {
   fontSize: '105%',
