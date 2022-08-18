@@ -33,7 +33,7 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
     // Don't allow more submissions while submitting
     this.setState({ submitting: true });
     // TODO: Check if the phone number is parsed correctly
-    fetch(`${process.env.REACT_APP_API_URL}/api/messages`, {
+    fetch(`https://plains-paris-text-server.herokuapp.com/api/messages`, { // TODO: Hide this API url!
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'
