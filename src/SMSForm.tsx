@@ -80,13 +80,13 @@ class SMSForm extends React.Component<SMSFormPropsType, SMSFormStateType> {
             <label htmlFor='fullname' className='modal-contents'>
               What's the name of the person receiving this app?
             </label>
-            <input type='text' name='Full Name' id='fullname' defaultValue={this.state.message.fullname} onChange={this.onHandleChange}/>
+            <input type='text' name='Full Name' id='fullname' value={this.state.message.fullname} onChange={this.onHandleChange}/>
           </div>
           <div>
             <label htmlFor='phone' className='modal-contents'>
               What's their phone number?
             </label>
-            <input type='tel' name='Phone' id='phone' defaultValue={this.state.message.phone} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
+            <input type='tel' name='Phone' id='phone' value={this.state.message.phone} onChange={this.onHandleChange} className={this.state.error ? 'error' : ''}/>
           </div>
           <button className='blue-button' disabled={this.state.submitting}>
             Share App
