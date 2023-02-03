@@ -1,3 +1,8 @@
+/**
+ * MobileView.tsx
+ * This file describes all the UI for viewing on a mobile device.
+ */
+
 import './MobileView.css'
 import TopLeftPic from './images/justin_and_tara.png'
 import TopRightPic from './images/plainsparis-balloon-logo-cropped.png'
