@@ -1,3 +1,8 @@
+/**
+ * Modal.tsx
+ * Defines the pop-up modal that shows when non-referral buttons are pressed on the MobileView screen.
+ */
+
 import './modal.css';
 import React from 'react';
 import SMSForm from './SMSForm';
